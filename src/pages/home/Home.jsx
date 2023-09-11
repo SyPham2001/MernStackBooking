@@ -4,6 +4,8 @@ import Navbar from '../../components/navbar/Navbar'
 import Header from '../../components/header/Header'
 import Featured from '../../components/featured/Featured'
 import PropertyList from '../../components/propertyList/PropertyList'
+import FeatureProperties from '../../components/featureProperties/FeatureProperties'
+import MailList from '../../components/mailList/MailList'
 const Home = () => {
   return (
     <div>
@@ -22,7 +24,11 @@ const Home = () => {
           </h1>
         </div>
         <PropertyList />
-        <h1 className='homeTitle'>Nhà ở mà khách yêu thích</h1>
+        <h1 className='homeTitle' style={{
+          marginBottom : '-15px'
+        }}>Nhà ở mà khách yêu thích</h1>
+        <FeatureProperties/>
+        <MailList/>
       </div>
     </div>
   )
